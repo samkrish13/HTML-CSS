@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task38</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+</head>
+<style>
+    .ContainerDirectionRow {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;
+        flex-direction: row;
+        margin: 10px;
+        padding: 10px;
+    }
+    .ContainerDirectionColumn {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        height: 200px;
+    }
+    .ContainerDirectionRowReverse {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;
+        flex-direction: row-reverse;            
+        margin: 10px;
+        padding: 10px;
+    }
+    .ContainerDirectionColumnReverse {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;
+        flex-direction: column-reverse;     
+        margin: 10px;
+        padding: 10px;
+        height: 200px;
+    }
+    .ContainerFlex-NoWrap {
+        display: flex;
+        flex-wrap: nowrap;
+        border: 2px solid black;     
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        overflow: auto;
+    }
+    .ContainerFlex-Wrap {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;     
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+    }
+    .ContainerFlex-WrapReverse {
+        display: flex;
+        flex-wrap: wrap-reverse;        
+        border: 2px solid black;    
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+    }
+    .ContainerFlexFlowRowWrap {
+        display: flex;
+        flex-flow: row wrap;
+        border: 2px solid black;     
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+    }
+    .ContainerFlexFlowColumnWrap {
+        display: flex;
+        flex-flow: column wrap;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        height: 200px;  
+    }
+    .ContainerFlexJustifyCenter {
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;     
+        margin: 10px;
+        padding: 10px;
+    }
+    .FlexJustifyStart {
+        display: flex;
+        justify-content: flex-start;
+        border: 2px solid black;        
+        margin: 10px;
+        padding: 10px;
+    }   
+    .FlexJustifyEnd {
+        display: flex;
+        justify-content: flex-end;
+        border: 2px solid black;        
+        margin: 10px;
+        padding: 10px;
+    }
+    .FlexJustifySpaceBetween {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;        
+        margin: 10px;
+        padding: 10px;
+    }
+    .FlexJustifySpaceAround {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;    
+        margin: 10px;   
+        padding: 10px;
+    }
+    .FlexJustifySpaceEvenly {
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid black;        
+        margin: 10px;
+        padding: 10px;
+    }   
+ 
+    
+    </style>
+<body>
+    <h1>This is an example of FlexBox properties</h1>
+    <p>This is an example of Flex Direction Flow: Row</p>
+    <div class="ContainerDirectionRow">
+        
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>    
+    </div>
+    <p>This is an example of Flex Direction Flow: Column</p>
+    <div class="ContainerDirectionColumn">
+        
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>    
+    </div>
+    <p>This is an example of Flex Direction Flow: RowReverse</p>
+    <div class="ContainerDirectionRowReverse">
+        
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>    
+    </div>
+    <p>This is an example of Flex Direction Flow: ColumnReverse</p>
+    <div class="ContainerDirectionColumnReverse">
+        
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>    
+    </div>
+    <p>This is an example of Flex Wrap Property</p>
+    <div class="ContainerFlex-NoWrap">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+        <div>Box 7</div>
+        <div>Box 8</div>
+        <div>Box 9</div>
+        <div>Box 10</div>    
+    </div>
+    <div class="ContainerFlex-Wrap">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+        <div>Box 7</div>
+        <div>Box 8</div>
+        <div>Box 9</div>
+        <div>Box 10</div>    
+    </div>
+    <div class="ContainerFlex-WrapReverse">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+        <div>Box 7</div>
+        <div>Box 8</div>
+        <div>Box 9</div>
+        <div>Box 10</div>    
+    </div>
+    <p>This is an example of Flex Flow Property</p>
+    <div class="ContainerFlexFlowRowWrap">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        </div>
+    <div class="ContainerFlexFlowColumnWrap">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        </div>
+    <div class="FlexJustifyCenter">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </div>
+    <div class="FlexJustifyStart">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </div>
+    <div class="FlexJustifyEnd">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </div>
+    <div class="FlexJustifySpaceBetween">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+
+    </div>
+    <div class="FlexJustifySpaceAround">
+        <div>Box 1</div>
+        <div>Box 2</div>        
+        <div>Box 3</div>
+    </div>
+    <div class="FlexJustifySpaceEvenly">
+        <div>Box 1</div>
+        <div>Box 2</div>        
+        <div>Box 3</div>
+    </div>
+        
+</body>
+</html>

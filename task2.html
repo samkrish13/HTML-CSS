@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my form</title>
+</head>
+<body>
+    <style>
+        input{
+            background-color: rgb(192, 192, 125);
+        }
+        legend{
+            background-color: rgb(135, 93, 84);
+            border: 2px solid black;
+            color: white;
+        }
+        fieldset{
+            align-items: center;
+        }
+    </style>
+    <fieldset>
+        <legend>This is my form</legend>
+        Email:
+        <input type="text" name="Email"><br><br>
+
+        Password:
+        <input type="text" name="password"><br><br>
+
+        Confirm Password:
+        <input type="number" name="Confirm"><br><br>
+
+        Upload Your Picture:
+        <input type="file" name="Picture"><br><br>
+
+        Gender:
+        <input type="radio" name="Gender" value="Male"> Male
+        <input type="radio" name="Gender" value="Female"> Female<br><br>
+
+        Select Your Country:
+        <select name="Country">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Pakisthan">Pakisthan</option>
+            <option value="London">London</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Vietnam">Vietnam</option>
+        </select><br><br>
+
+        Hobby:
+        <input type="checkbox" name="Hobby" value="Reading"> Reading
+        <input type="checkbox" name="Hobby" value="Traveling"> Traveling
+        <input type="checkbox" name="Hobby" value="Swimming"> Swimming
+        <input type="checkbox" name="Hobby" value="Cooking"> Cooking
+        <input type="checkbox" name="Hobby" value="Cricket"> Cricket
+        <input type="checkbox" name="Hobby" value="Footballl"> Football
+        <br><br>
+        Address:
+        <input type="textarea" name="Address" rows="4" cols="50"><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+
+</body>
+</html>

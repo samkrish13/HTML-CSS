@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task41</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        .gridArea{
+            display:grid;
+            background-color:rgb(108, 56, 101);
+            grid-template-columns: auto auto auto;
+            margin:10px;
+            padding:10px;
+        }
+        .gridArea div{
+            background-color:rgb(139, 115, 150);
+            border:2px solid black;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+            margin:5px;
+        }
+        .item1{
+            grid-area: 2/1/span 3/span 2;
+        }
+        .itemA{grid-area: Header;}
+        .itemB{grid-area: leftMenu;}
+        .itemC{grid-area: leftLowMenu;}
+        .itemD{grid-area: leftMain;}
+        .itemE{grid-area: rightMain;}
+        .itemF{grid-area: midBody;}
+        .itemG{grid-area: lowBody;}
+        .gridArea2{
+            display:grid;
+            grid-template-areas:
+                "Header Header Header Header Header"
+                "leftMenu leftMain leftMain rightMain rightMain"
+                "leftMenu midBody midBody midBody midBody"
+                "leftLowMenu midBody midBody midBody midBody"
+                "leftLowMenu lowBody lowBody lowBody lowBody";
+            grid-template-columns: auto auto auto auto auto;
+            background-color:rgb(108, 56, 101);
+            margin:10px;
+            padding:10px;
+        }
+        .gridArea2 div{
+            background-color:rgb(139, 115, 150);
+            border:2px solid black;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+            margin:5px;
+        }
+        .GridFlow{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            background-color: rgb(108, 56, 101);
+            padding:10px;
+            margin:10px;
+        }   
+        .GridFlow>div{
+            background-color: rgb(139, 115, 150);
+            border:2px solid black;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+            margin:5px;
+        }
+        .GridAutoColumns{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(108, 56, 101);
+            padding:10px;
+            margin:10px;
+        }
+        .GridAutoColumns>div{
+            background-color: rgb(139, 115, 150);
+            border:2px solid black;
+            font-size:20px;
+            text-align:center;
+            padding:20px;
+            margin:5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p> This is an example of Grid Area Property</p>
+    <div class="gridArea">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        
+    </div>
+    <p> This is another example of Grid Area Property</p>
+    <div class="gridArea2">
+        <div class="itemA">Header </div>
+        <div class="itemB">topMenu</div>
+        <div class="itemC">bottomMenu</div>
+        <div class="itemD">leftMain</div>
+        <div class="itemE">rightMain</div>
+        <div class="itemF">midBody</div>
+        <div class="itemG">lowBody</div>
+    </div>
+    <h1>Grid Flow provides the direction of the grid items</h1>
+    <p>This is an example of Grid Auto Flow Property:columns</p>
+    <div class="GridFlow" style="grid-auto-flow: column;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <p>This is an example of Grid Auto Flow Property:rows</p>
+    <div class="GridFlow" style="grid-auto-flow: row;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <p>This is an example of Grid Auto columns</p>
+    <div class="GridAutoColumns" style="grid-auto-columns: 100px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="GridAutoColumns"   style="grid-auto-columns: 30%;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div class="GridAutoColumns"   style="grid-auto-columns: auto;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

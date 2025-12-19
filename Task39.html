@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task39-FlexBox Items</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .flex-container > div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+        }
+        .flex-containerGrow {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .flex-containerGrow > div {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+        }  
+        .flex-containerBasis {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 800px;
+        }       
+        .flex-containerBasis > div {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            margin: 10px;
+            font-size: 30px;
+        } 
+        .flexContainerAlignSelf {
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            height: 250px;
+        }
+        .flexContainerAlignSelf > div {
+            background-color: lightcoral;
+            padding: 20px;
+            font-size: 20px;
+        }  
+
+    </style>
+</head>
+<body>
+    <h1>FlexBox Items</h1>
+<p>This is an example of Flex Container Order  </p>
+    <div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>
+<p>This is an example of Flex Container Grow  </p>
+<div class="flex-containerGrow">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 4">3</div>
+</div>
+<p>This is an example of Flex Container Basis  </p>
+<div class="flex-containerBasis">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-basis: 250px">3</div>
+  <div style="flex-basis: 200px">4</div>
+</div>
+<p>This is an example of Flex Container Align Self</p>
+<div class="flexContainerAlignSelf">
+    <div style="align-self: auto; border: 2px solid black; padding: 10px; margin: 10px;">Auto</div>
+    <div style="align-self: flex-start; border: 2px solid black; padding: 10px; margin: 10px;">Flex Start</div>
+    <div style="align-self: flex-end; border: 2px solid black; padding: 10px; margin: 10px;">Flex End</div>
+    <div style="align-self: center; border: 2px solid black; padding: 10px; margin: 10px;">Center</div>
+    <div style="align-self: stretch; border: 2px solid black; padding: 10px; margin: 10px;">Stretch</div>   
+</div>
+</body>
+</html>

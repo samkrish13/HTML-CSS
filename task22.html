@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Properties Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        .box {
+            width: 90%;
+            height: 200px;
+            border: 2px solid #000;
+            margin-bottom: 30px;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bg-color {
+            background-color: teal;
+        }
+        .bg-image {
+            background-image: url('https://picsum.photos/500');
+        }
+        .bg-repeat {
+            background-image: url('https://picsum.photos/200');
+            background-repeat: repeat;
+        }
+        .bg-no-repeat {
+            background-image: url('https://picsum.photos/200');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bg-size-cover {
+            background-image: url('https://picsum.photos/600');
+            background-size: cover;
+        }
+        .bg-size-contain {
+            background-image: url('https://picsum.photos/600');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .bg-position {
+            background-image: url('https://picsum.photos/300');
+            background-size: 150px 150px;
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+        .bg-fixed {
+            background-image: url('https://picsum.photos/800');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .bg-shorthand {
+            background: url('https://picsum.photos/500') no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Background Properties Demo</h1>
+    <div class="box bg-color">background-color</div>
+    <div class="box bg-image">background-image</div>
+    <div class="box bg-repeat">background-repeat: repeat</div>
+    <div class="box bg-no-repeat">background-repeat: no-repeat</div>
+    <div class="box bg-size-cover">background-size: cover</div>
+    <div class="box bg-size-contain">background-size: contain</div>
+    <div class="box bg-position">background-position: right bottom</div>
+    <div class="box bg-fixed">background-attachment: fixed lorem</div>
+    <div class="box bg-shorthand">background shorthand property</div>
+
+</body>
+</html>

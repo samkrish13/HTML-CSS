@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selectors</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        div p {
+            color: blue;
+            font-size: 40px;
+        }
+        div span {
+            color: red;
+            font-size: 50px;
+        }
+        div > h1 {
+            color: rgb(30, 77, 30);
+            font-size: 60px;
+        }
+        h2+p {
+            color: orange;
+            font-size: 70px;
+        }
+        h3~p {
+            color: violet;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a descendant selectors example</h1>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+        <span>This is a span inside a div.</span>   
+        
+    </div>    
+    <p>This is a paragraph outside a div.</p>
+    <span>This is a span outside a div.</span>
+
+    <div>
+        <h1>This is a example of child selectors</h1>
+    </div>
+
+    <h2>This is a example of next sibling selectors outside div</h2>
+    <p>This is another paragraph outside a div.</p>
+    <p>This is another paragraph outside a div not adjacent to H1, so it might not reflect the propertiess</p>
+    <span>This is another span outside a div.</span>
+
+    <h3>This is a example of subsequent sibling selectors outside div</h3>
+    <p>This is another paragraph outside a div.</p>
+    <p>This is another paragraph outside a div not adjacent to H1, so it might not reflect the propertiess</p>
+    <span>This is another span outside a div.</span>
+</body>
+</html>

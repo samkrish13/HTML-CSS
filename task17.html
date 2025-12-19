@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task17- psuedo-classes selectors on links</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        a:link {
+            color: blue;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        a:active {
+            color: orange;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        div:hover p {
+            color: green;
+            font-size: 25px;
+            padding-left: 35%;
+        }
+        form input:focus {
+            border: 2px solid red;
+            background-color: rgb(155, 155, 72);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is the example of psuedo-classes selectors used on links</h1>    
+    <a href="https://www.youtube.com/watch?v=QgxkYbGr2II" target="_blank">This is a link to YouTube</a><br><br>
+    <a href="https://www.wikipedia.org/" target="_blank">This is a link to Wikipedia</a><br><br>
+    <a href="https://www.github.com/" target="_blank">This is a link to GitHub</a><br><br>
+    <a href="https://www.stackoverflow.com/" target="_blank">This is a link to Stack Overflow</a><br><br>
+    <a href="https://www.reddit.com/" target="_blank">This is a link to Reddit</a><br><br>
+
+    <h2>The below works on div based psuedo class selector which works on hovering over it</h2>
+    <div>
+        <p>Click on the links above to see the different states of the links using psuedo-classes selectors.</p>
+    </div><br>
+    <h2>This is an example of psuedo-classes selectors used on form input fields</h2>
+    <p>Click inside the input fields to see the focus state using psuedo-classes selectors.</p>
+    <form>
+        <input type="text" placeholder="Type something here to test active state of links">
+        <input type="password" placeholder="Type password here">
+        <input type="submit" value="Submit">
+    </form> 
+</body>
+</html>

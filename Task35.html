@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-35 OverFlow Properties</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        .id1 {
+            width: 300px;
+            height: 100px; 
+            border: 1px solid;
+            overflow: auto;
+        }
+        .id2{
+            width: 300px;
+            height: 100px; 
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .id3{
+            width: 300px;
+            height: 100px; 
+            border: 1px solid;
+            overflow: scroll;
+        }
+        .id4{
+            width: 300px;
+            height: 100px; 
+            border: 1px solid;
+            overflow: visible;
+            z-index: 2;
+        }
+        .id5{
+            width: 300px;
+            height: 100px; 
+            border: 1px solid;
+            overflow: clip;
+            overflow-clip-margin: 10px;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an example of Overflow Properties</h1>
+    <p>This is an example of overflow Auto property</p>
+    <div class="id1">
+        This is some sample text that is meant to demonstrate the overflow property in CSS. When the content exceeds the size of the container, scrollbars will appear to allow you to view the hidden content. This is particularly useful for maintaining a clean layout while still providing access to all information.
+    </div>
+    <br><br>
+    <p>This is an example of overflow Hidden property</p>
+
+    <div class="id2">The overflow is clipped, and the rest of the content will be invisible. Content can be scrolled programmatically (e.g. by setting scrollLeft or scrollTo())<br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque natus asperiores vitae modi fuga necessitatibus quis, nam odit facere officiis expedita beatae, exercitationem libero incidunt ipsum error, est dignissimos enim ea nesciunt optio. Facere sed aut nesciunt debitis libero, dolor ad eaque quos aliquid quis est voluptas provident, hic in.</div>
+    <br><br>
+    <p>This is an example of overflow Scroll property</p>
+    <div class="id3">
+        The overflow is clipped, and a scrollbar should be added to see the rest of the content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur? Quisquam consequuntur non, neque quos accusantium explicabo voluptatum voluptates dignissimos harum animi ab vero nisi minima delectus cumque cum quidem exercitationem nesciunt maxime iure esse alias? Ut illum, odio neque recusandae enim, ea molestias magni non ipsum adipisci quaerat nostrum.
+    </div>
+    <br><br>
+    <p>This is an example of overflow Visible property</p>
+    <div class="id4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deserunt incidunt cum quae saepe qui dolorum aspernatur perspiciatis, deleniti inventore. Provident odio unde voluptate quis quidem! Dolorem animi reprehenderit quas enim velit expedita eaque. Vel odit veniam adipisci quis, facilis culpa facere animi aspernatur veritatis maxime. Sint error optio consequuntur.
+    </div>
+    <br><br><br> <br><br> <br>
+    <p>This is an example of overflow Clip property</p>
+    <div class="id5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nisi nobis maxime dicta, fugiat ex dolorum in nam rerum distinctio animi, debitis inventore. Eius laudantium voluptates eaque velit, eveniet dolores nam! Sed adipisci earum ex? Vero voluptatibus fugit esse officia necessitatibus expedita odio eligendi ullam, molestias distinctio beatae itaque quod.
+    </div>
+</body>
+</html>

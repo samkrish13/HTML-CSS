@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-34-Z-Index Example</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+            float: left;
+            margin-right: 20px;
+            z-index:-1;
+            position: absolute;
+        }
+        p{
+            position: relative;
+            z-index:1;
+            width: 500px;
+        }
+        
+        .container {
+            position: relative;
+        }
+
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+            top: 500px;
+            }
+
+        .gray-box {
+            position: absolute;
+            z-index: 3; 
+            background: lightgray;
+            height: 60px;  
+            width: 70%;
+            left: 50px;
+            top: 550px;
+            
+            }
+
+        .green-box {
+            position: absolute;
+            z-index: 2;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: 500px;
+            height: 100px;
+            }
+    </style>
+</head>
+<body>
+
+<h2>Simple z-index Demonstration</h2>
+<img src="/Users/sam/Downloads/ImageForDemo2.jpg">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae rerum aliquid recusandae doloribus expedita quaerat, soluta, voluptates sunt modi, minima animi distinctio placeat praesentium esse vitae ipsum accusamus neque sequi! Asperiores repudiandae, vitae totam vel consequatur dolor autem officia pariatur?</p>
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+<div class="container">
+  <div class="black-box">Black box (z-index: 1)</div>
+  <div class="gray-box">Gray box (z-index: 3)</div>
+  <div class="green-box">Green box (z-index: 2)</div>
+</div>
+
+</body>
+</html>

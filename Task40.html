@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task40 Grid Properties</title>
+    <link rel="icon" type="image/png" href="/Users/sam/task12/10771418.png">
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns:auto auto auto auto;
+            background-color: blueviolet;
+            padding:10px;
+        }
+        .container div{
+            padding:10px;
+            margin:5px;
+            border:2px solid blue;
+            font-size:20px;
+            text-align:center;
+            background-color:lightgray;
+            width: 50px;
+        }
+        .InlineGrid{
+            display:inline-grid;
+            grid-template-columns: auto auto;
+            background-color: coral;
+            padding:10px;
+        }        
+        .InlineGrid div{
+            padding:10px;
+            margin:5px;
+            border:2px solid red;   
+            font-size:20px;
+            text-align:center;
+        }
+        .fiveColumns{
+            display:grid;
+            grid-template-columns: repeat(5, auto);
+            background-color: darkcyan;
+            padding:10px;
+        }
+        .threeColumns{
+            display:grid;
+            grid-template-columns:100px 250px 560px;
+            background-color: darkorange;
+            padding:10px;
+        }
+        .fiveColumns div, .threeColumns div{
+            padding:10px;       
+            margin:5px;
+            border:2px solid black;
+            font-size:20px;
+            text-align:center;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <p>This is an example of Grid Property</p>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <p>This is an example of Inline Grid Property</p>
+    <div class="InlineGrid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <p> Here the grid-template-columns is set to 5</p>
+    <div class="fiveColumns">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <p> Here the grid-template-columns is set to 3 with different sizes</p>
+    <div class="threeColumns">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>
