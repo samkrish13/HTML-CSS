@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task61</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f")
+              center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.feature-card {
+  border: none;
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+}
+.icon-box {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  margin: -30px -20px 20px;
+}
+.bg-red { background: #e74c3c; }
+.bg-pink { background: #d66aad; }
+.bg-green { background: #2ecc71; }
+.bg-blue { background: #3498db; }
+.course-box {
+  background: #f2f2f2;
+  padding: 20px;
+}
+footer {
+  background: #16a085;
+  color: white;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Lorem</a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="hero d-flex align-items-center">
+  <div class="container hero-content text-center">
+    <h1 class="display-4 fw-bold">Online Education</h1>
+    <p class="lead">The best educational template</p>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold">Our Featured Courses</h2>
+    <p class="text-muted mb-5">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="feature-card shadow-sm">
+          <div class="icon-box bg-red">🏆</div>
+          <h5>Web Development</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card shadow-sm">
+          <div class="icon-box bg-pink">🖼</div>
+          <h5>UI Design</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card shadow-sm">
+          <div class="icon-box bg-green">💻</div>
+          <h5>Interaction</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-card shadow-sm">
+          <div class="icon-box bg-blue">🌍</div>
+          <h5>User Experience</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold">Courses We Offer</h2>
+    <p class="text-muted mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="course-box">
+          <h6>Heading Course</h6>
+          <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h6>Our Contact</h6>
+        <p>Above Company Inc<br>New York, USA</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Quick Links</h6>
+        <p>About<br>Courses<br>Contact</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Latest Posts</h6>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Recent News</h6>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center mb-0">© 2026 Above Site</p>
+  </div>
+</footer>
+</body>
+</html>

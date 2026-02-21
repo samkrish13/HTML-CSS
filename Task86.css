@@ -1,0 +1,51 @@
+body {
+    background-image: url("/Users/sam/Downloads/top-view-desk-concept-with-notepad.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 1000px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #4e73df;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2e59d9;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}

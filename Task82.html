@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transitions and Transforms Playground</title>
+
+<style>
+body{
+    padding:40px;
+}
+h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    gap:30px;
+}
+.box{
+    height:120px;
+    background:#3b82f6;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.5s ease;
+    font-weight:bold;
+}
+.color:hover{
+    background:#ef4444;
+}
+.width:hover{
+    width:200px;
+}
+.height:hover{
+    height:170px;
+}
+.radius:hover{
+    border-radius:60px;
+}
+.shadow:hover{
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+.opacity:hover{
+    opacity:0.3;
+}
+.scale:hover{
+    transform:scale(1.4);
+}
+.rotate:hover{
+    transform:rotate(180deg);
+}
+.translate:hover{
+    transform:translate(40px,-20px);
+}
+.skew:hover{
+    transform:skew(20deg,10deg);
+}
+.combo:hover{
+    transform:scale(1.2) rotate(20deg) translateY(-10px);
+    background:#10b981;
+}
+.rotate3d:hover{
+    transform:rotateY(180deg);
+}
+.flip-container{
+    perspective:1000px;
+}
+.flip{
+    width:100%;
+    height:120px;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:0.7s;
+}
+.flip-container:hover .flip{
+    transform:rotateY(180deg);
+}
+
+.front, .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    border-radius:12px;
+    backface-visibility:hidden;
+    color:white;
+    font-weight:bold;
+}
+
+.front{
+    background:#6366f1;
+}
+
+.back{
+    background:#f59e0b;
+    transform:rotateY(180deg);
+}
+
+.btn{
+    padding:14px 25px;
+    background:#111827;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:8px solid #d1d5db;
+    border-top:8px solid #3b82f6;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+.bounce{
+    animation:bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    from{transform:translateY(0);}
+    to{transform:translateY(-30px);}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Transitions and Transforms Examples</h1>
+
+<div class="container">
+
+<div class="box color">Color</div>
+<div class="box width">Width</div>
+<div class="box height">Height</div>
+<div class="box radius">Radius</div>
+<div class="box shadow">Shadow</div>
+<div class="box opacity">Opacity</div>
+<div class="box scale">Scale</div>
+<div class="box rotate">Rotate</div>
+<div class="box translate">Move</div>
+<div class="box skew">Skew</div>
+<div class="box combo">Combo</div>
+<div class="box rotate3d">3D Rotate</div>
+
+<div class="flip-container">
+    <div class="flip">
+        <div class="front">Front</div>
+        <div class="back">Back</div>
+    </div>
+</div>
+
+<button class="btn">Button Hover</button>
+
+<div class="spinner"></div>
+
+<div class="box bounce">Bounce</div>
+
+</div>
+
+</body>
+</html>
